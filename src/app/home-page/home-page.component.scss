@@ -1,0 +1,16 @@
+@import "src/styles.scss";
+
+.body {
+    margin: 40px;
+    .name {
+        color: $accent;
+        font-size: calc(1vw + 1em);
+    }
+    .image {
+        height: 200px;
+        width: 200px;
+        background-color: rosybrown;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}

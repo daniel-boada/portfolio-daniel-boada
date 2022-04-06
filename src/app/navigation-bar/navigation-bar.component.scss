@@ -1,0 +1,10 @@
+@import "src/styles.scss";
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 24px;
+    background-color: $accent;
+    color: $background;
+}
