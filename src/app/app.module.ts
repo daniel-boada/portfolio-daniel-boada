@@ -10,6 +10,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { SkillsPageComponent } from './skills-page/skills-page.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     ContactPageComponent,
     AboutPageComponent,
     NavigationBarComponent,
+    SkillsPageComponent,
   ],
   imports: [
     BrowserModule,
