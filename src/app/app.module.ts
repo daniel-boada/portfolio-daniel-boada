@@ -9,7 +9,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
-import { ParticlesComponent } from './particles/particles.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     HomePageComponent,
     ContactPageComponent,
     AboutPageComponent,
-    ParticlesComponent,
     NavigationBarComponent,
   ],
   imports: [
