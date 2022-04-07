@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
 
   constructor() { }
-  ocupations = [ "Front End Developer", "UI/UX Developer", "Programmer", "Software Developer"];
+  ocupations = [ "Front End Developer", "UI/UX Developer", "Front End Engineer", "UI Programmer", "Software Developer", "Computer Engineer"];
   ocupationIndex = 0;
   image = "assets/DanielBoada.png";
 
