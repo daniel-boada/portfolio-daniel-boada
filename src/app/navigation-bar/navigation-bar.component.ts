@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationBarComponent implements OnInit {
     constructor() {}
 
+    logo = 'assets/logo.png';
+    LinkedInLogo = 'assets/linkedin.svg';
+    mailLogo = 'assets/mail.svg';
     ngOnInit(): void {}
+
 
     scrollTo(elementId: string) {
         if (document && document.getElementById(elementId)) {

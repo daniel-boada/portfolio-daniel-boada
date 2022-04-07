@@ -1,14 +1,32 @@
 @import "src/styles.scss";
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    height: 50px;
+    position:fixed;
+    top:0;
     background-color: $light-blue;
-    color: $dark-blue;
+    width: 100%;
+    z-index: 1;
 
     .buttons {
-        font-size: 20px;
-        width: 250px;
+        width: 1000px;
+        display: flex;
+        height: 70px;
+        color: $beige; 
+        padding: 5px;
+
+        .button {
+            font-size: 20px;
+        }
+
+        .logo {
+            margin-left: auto;
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
     }
+
+    
 }

@@ -17,6 +17,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
     declarations: [
@@ -27,6 +28,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
         NavigationBarComponent,
         SkillsPageComponent,
         ExperiencePageComponent,
+        ProjectsComponent,
     ],
     imports: [
         BrowserModule,

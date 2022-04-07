@@ -6,10 +6,22 @@
     text-align: -webkit-center;
 
     .page {
+        margin-top: 80px;
         flex-direction: column;
         display: flex;
-        width: 1000PX;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
         color: $light-blue;
+
+        .home {
+            width: 1000px;
+        }
+
+        .tile {
+            border-radius: 20px;
+            background-color: $light-blue;
+            width: 1000px;
+            margin-bottom: 40px;
+        }
     }
 }
