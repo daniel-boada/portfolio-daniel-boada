@@ -4,28 +4,33 @@
     justify-content: center;
 
     .title {
+        text-align: center;
         color: $accent;
         font-size: 32px;
     }
 
-    .icons {
+    .icons1 {
+        width: fit-content;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
-        background-color: $fonts;
+        background-color: #F7E2E2;
         height: 100px;
         justify-content: center;
         border-radius: 10px;
         display: flex;
-        .icon { 
-            margin: 10px;
-            filter: invert(96%) sepia(94%) saturate(421%) hue-rotate(79deg) brightness(96%) contrast(90%);
-            height: 25px;
-            width: 25px;
-        }
-        .icon:hover {
-            height: 30px;
-            width: 30px;
-        }
+        flex-wrap: wrap;
+        align-content: center;
+        .icons {
+            .icon { 
+                margin: 10px 5px;
+                height: 50px;
+                width: 50px;
+            }   
+            .icon:hover {
+                margin: 7px 2px;
+                height: 56px;
+                width: 56px;
+            }
+        } 
     }
 }

@@ -1,7 +1,20 @@
 @import "src/styles.scss";
 
-.page {
-    text-align: center;
-    color: $fonts;
+.root {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     background-color: $background;
+
+    .page {
+        background-color: $background ;
+        width: 100%;
+        text-align: center;
+        color: $fonts;
+        // background-color: ;  
+    }
+
 }
+
