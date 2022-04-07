@@ -1,4 +1,8 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import {
+    CUSTOM_ELEMENTS_SCHEMA,
+    NgModule,
+    NO_ERRORS_SCHEMA,
+} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,26 +16,28 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    ContactPageComponent,
-    AboutPageComponent,
-    NavigationBarComponent,
-    SkillsPageComponent,
-    ExperiencePageComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatMenuModule,
-    MatButtonModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
+    declarations: [
+        AppComponent,
+        HomePageComponent,
+        ContactPageComponent,
+        AboutPageComponent,
+        NavigationBarComponent,
+        SkillsPageComponent,
+        ExperiencePageComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatExpansionModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

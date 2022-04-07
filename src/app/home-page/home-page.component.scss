@@ -1,42 +1,56 @@
 @import "src/styles.scss";
 
 .body {
-    margin: 40px;
+    margin: 40px 0;
+    max-width: 1000px;
     .top {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         
-        .introduction {
+        .img {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
 
-            .firstName {
-                color: #F7E2E2;
-                font-size: 60px;
-                font-weight: 900;
-                margin-left: 2px;
+            .introduction {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                .hello {
+                    font-size: 50px;
+                }
+                .firstName {
+                    color: $beige;
+                    font-size: 150px;   
+                    line-height: 100px;
+                    font-weight: 900;
+                    margin-left: -5px;
+                }
+                .lastName {
+                    color: $beige;
+                    font-size: 200px;
+                    line-height: 125px;
+                    font-weight: 900;
+                    margin-left: -8px;
+                }
             }
-            .lastName {
-                color: #F7E2E2;
-                font-size: 100px;
-                line-height: 70px;
-                font-weight: 900;
+            .image {
+                margin-left: auto;
+                height: 350px;
+                width: 350px;
+                border-radius: 50%; 
+                display: inline-block;
             }
-            
         }
-        .image {
-            margin-left: 100px;
-            height: 200px;
-            width: 200px;
-            background-color: #61A4BC;  
-            border-radius: 50%;
-            display: inline-block;
-        }
-    }
-    
-    .ocupation {
         
+        .text {
+            display: flex;
+            font-size: 28px;
+            margin-top: 20px;
+            .ocupation {
+                text-align: center;
+                width: 300px;
+                color: $beige;
+            }
+        }
     }
 }

@@ -10,6 +10,7 @@ export class HomePageComponent implements OnInit {
   constructor() { }
   ocupations = [ "Front End Developer", "UI/UX Developer", "Programmer", "Software Developer"];
   ocupationIndex = 0;
+  image = "assets/DanielBoada.png";
 
   ngOnInit(): void {
     setInterval(() => {
@@ -17,7 +18,7 @@ export class HomePageComponent implements OnInit {
         this.ocupationIndex = -1;
       }
       this.ocupationIndex++;
-    }, 1500);
+    }, 1000);
   }
 
 }

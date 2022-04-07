@@ -1,13 +1,17 @@
 <div class="body">
-    <div class='top'>
-        <div class="introduction">
-            <h1>Hello, I'm</h1>
-            <h1 class="firstName">Daniel</h1>
-            <h1 class="lastName">Boada</h1>
+    <div class="top">
+        <div class="img">
+            <div class="introduction">
+                <h1 class="hello">Hello, I'm</h1>
+                <h1 class="firstName">Daniel</h1>
+                <h1 class="lastName">Boada</h1>
+            </div>
+            <img class="image" [src]="image" />
         </div>
-        <div class="image"></div>
+        <div class="text">
+            <p>a</p>
+            <p class="ocupation"><{{ ocupations[ocupationIndex] }}></p>
+            <p>With a passion for web development and UI/UX Design</p>
+        </div>
     </div>
-
-    <h2 class="ocupation">a <{{ ocupations[ocupationIndex] }}></h2>
-    <p>With a passion for web development and UI/UX Design</p>
 </div>
