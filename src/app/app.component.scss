@@ -2,18 +2,14 @@
 
 .root {
     width: 100%;
-    background-color: $dark-blue;
     text-align: -moz-center;
     text-align: -webkit-center;
 
     .page {
         flex-direction: column;
         display: flex;
-        background-color: $dark-blue;
         width: 1000PX;
         text-align: center;
         color: $light-blue;
     }
-
 }
-

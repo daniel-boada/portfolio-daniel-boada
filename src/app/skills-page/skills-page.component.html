@@ -2,7 +2,13 @@
     <h1 class="title">Skills</h1>
     <div class="icons1">
         <div class="icons" *ngFor="let icon of icons">
-            <img class="icon" [src]="icon" />
+            <div class="tooltip">
+                <img class="icon" [src]="icon.url" />
+                <div class="top">
+                    <p class="tool"> {{ icon.description }} </p>
+                    <i></i>
+                </div>
+            </div>
         </div>
     </div>
     <div class="icons2">

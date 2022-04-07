@@ -10,6 +10,7 @@
     }
 
     .icons1 {
+        padding: 0 10px;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
@@ -21,24 +22,25 @@
         flex-wrap: wrap;
         align-content: center;
         .icons {
-            .icon { 
+            .icon {
+                filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
                 margin: 10px 5px;
                 height: 50px;
                 width: 50px;
-            }   
+            }
             .icon:hover {
                 margin: 7px 2px;
                 height: 56px;
                 width: 56px;
             }
-        } 
+        }
     }
     .icons2 {
         justify-content: center;
         align-content: center;
         display: flex;
         margin-top: 20px;
-        width: 540px;
+        width: 560px;
         background-color: $light-blue;
         border-radius: 10px;
         margin-left: auto;
@@ -53,7 +55,7 @@
         }
         .color {
             font-size: 20px;
-            width: 540px;
+            width: 560px;
             background: $beige;
         }
         .panel-title {
@@ -61,4 +63,58 @@
             width: 250px;
         }
     }
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.tooltip .top {
+    min-width: 100px;
+    max-width: 60px;
+    top: -5px;
+    left: 15px;
+    transform: translate(-30%, -100%);
+    padding: 10px 10px;
+    color: $beige;
+    background-color: $light-blue;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99999999;
+    box-sizing: border-box;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    display: none;  
+    text-align: center;
+}
+
+.tool {
+    margin: 0;
+}
+
+.tooltip:hover .top {
+    display: block;
+}
+
+.tooltip .top i {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    width: 30px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.tooltip .top i::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: $light-blue;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }

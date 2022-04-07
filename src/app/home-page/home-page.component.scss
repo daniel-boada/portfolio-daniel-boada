@@ -39,6 +39,18 @@
                 width: 350px;
                 border-radius: 50%; 
                 display: inline-block;
+                
+                &:hover {
+                    -webkit-transform: scaleX(-1);
+                    transform: rotateY(180deg);
+                    transition: transform 0.8s;
+                }
+
+                &:not(:hover) {
+                    -webkit-transform: scaleX(1);
+                    transform: rotateY(360deg);
+                    transition: transform 0.8s;
+                }
             }
         }
         
@@ -47,6 +59,7 @@
             font-size: 28px;
             margin-top: 20px;
             .ocupation {
+                text-decoration: underline;
                 text-align: center;
                 width: 300px;
                 color: $beige;
