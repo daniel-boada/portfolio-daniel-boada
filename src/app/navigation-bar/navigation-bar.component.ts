@@ -11,6 +11,8 @@ export class NavigationBarComponent implements OnInit {
     logo = 'assets/logo.png';
     LinkedInLogo = 'assets/linkedin.svg';
     mailLogo = 'assets/mail.svg';
+    github = 'assets/github.svg';
+    menu_navbar_icon = 'assets/menu_navbar.svg';
     ngOnInit(): void {}
 
 

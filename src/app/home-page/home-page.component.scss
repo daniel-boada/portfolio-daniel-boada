@@ -1,69 +1,132 @@
 @import "src/styles.scss";
 
 .body {
-    margin: 70px 0 50px 0;
-    max-width: 1000px;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .top {
-        display: flex;
-        flex-direction: column;
-
         .img {
-            display: flex;
-
             .introduction {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
                 .hello {
+                    margin-top: 20px;
                     font-size: 50px;
                 }
                 .firstName {
-                    color: $beige;
-                    font-size: 140px;
-                    line-height: 120px;
+                    color: $dark-blue;
+                    font-size: 25vw;
+                    line-height: 20vw;
                     font-weight: 900;
-                    margin-left: -4px;
                 }
                 .lastName {
-                    color: $beige;
-                    font-size: 200px;
-                    line-height: 150px;
+                    color: $dark-blue;
+                    font-size: 25vw;
+                    line-height: 20vw;
                     font-weight: 900;
-                    margin-left: -8px;
                 }
             }
             .image {
-                margin-left: auto;
-                height: 350px;
-                width: 350px;
-                border-radius: 50%;
-                display: inline-block;
-
-                &:hover {
-                    -webkit-transform: scaleX(-1);
-                    transform: rotateY(180deg);
-                    transition: transform 0.8s;
-                }
-
-                &:not(:hover) {
-                    -webkit-transform: scaleX(1);
-                    transform: rotateY(360deg);
-                    transition: transform 0.8s;
-                }
+                max-width: 400px;
+                width: 80vw;
             }
         }
 
         .text {
             display: flex;
-            font-size: 28px;
-            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 8vw;
+            line-height: 8vw;
+            margin-top: 20px;
+
             .ocupation {
+                margin-bottom: 20px;
+                font-size: 10vw;
+                line-height: 10vw;
+                font-weight: 900;
                 text-decoration: underline;
                 text-align: center;
-                width: 300px;
-                color: $beige;
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .body {
+        margin: 70px 0 50px 0;
+        max-width: 1000px;
+
+        .top {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .img {
+                display: flex;
+                flex-wrap: wrap;
+
+                .introduction {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    .hello {
+                        margin-top: 0;
+                    }
+
+                    .firstName {
+                        color: $dark-blue;
+                        font-size: 140px;
+                        line-height: 120px;
+                        font-weight: 900;
+                        margin-left: -4px;
+                    }
+                    .lastName {
+                        color: $dark-blue;
+                        font-size: 200px;
+                        line-height: 150px;
+                        font-weight: 900;
+                        margin-left: -8px;
+                    }
+                }
+                .image {
+                    margin-left: auto;
+                    height: 350px;
+                    width: 350px;
+                    border-radius: 50%;
+                    display: inline-block;
+
+                    &:hover {
+                        -webkit-transform: scaleX(-1);
+                        transform: rotateY(180deg);
+                        transition: transform 0.8s;
+                    }
+
+                    &:not(:hover) {
+                        -webkit-transform: scaleX(1);
+                        transform: rotateY(360deg);
+                        transition: transform 0.8s;
+                    }
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                font-size: 28px;
+                margin-top: 20px;
+
+                .ocupation {
+                    line-height: 80px;
+                    font-size: 100px;
+                    text-decoration: underline;
+                    text-align: left;
+                    color: $dark-blue;
+                }
             }
         }
     }

@@ -12,20 +12,20 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
-import { AboutPageComponent } from './about-page/about-page.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ProjectsComponent } from './projects/projects.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomePageComponent,
         ContactPageComponent,
-        AboutPageComponent,
         NavigationBarComponent,
         SkillsPageComponent,
         ExperiencePageComponent,
@@ -39,6 +39,8 @@ import { MatTabsModule } from '@angular/material/tabs';
         MatButtonModule,
         MatExpansionModule,
         MatTabsModule,
+        MatSidenavModule,
+        FlexLayoutModule
     ],
     providers: [],
     bootstrap: [AppComponent],
