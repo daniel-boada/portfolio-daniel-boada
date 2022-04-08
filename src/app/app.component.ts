@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   LinkedInLogo = 'assets/linkedin.svg';
   mailLogo = 'assets/mail.svg';
+  github = 'assets/github.svg';
 }

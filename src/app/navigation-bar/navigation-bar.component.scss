@@ -1,31 +1,63 @@
 @import "src/styles.scss";
 
 .navbar {
-    position:fixed;
+    position: fixed;
     top:0;
-    background-color: $light-blue;
+    background-color: white;
     width: 100%;
     z-index: 1;
+    box-shadow: 1px 1px 1px $dark-blue;
 
     .buttons {
-        display: flex;
-        height: 70px;
-        color: $beige; 
-        padding: 5px;
-
-        .button {
-            font-size: 20px;
-        }
-
-        .logo {
-            margin-left: auto;
-
-            img {
+        display: flex; 
+        height: 70px;       
+        color: $dark-blue; 
+        padding: 5px;    
+         .button {
+             display: none;
+         }
+         .logo {
+            display: none;
+         }
+         .menu {
+             display: block;
+             margin-left: auto;
+    
+             img {
                 width: 70px;
                 height: 70px;
             }
-        }
+         }
     }
 
     
+}
+
+@media screen and (min-width: 700px) {
+    .navbar {
+        .buttons {
+            display: flex; 
+            height: 70px;       
+            color: $dark-blue; 
+            padding: 5px;
+    
+            .button {
+                display: block;
+                font-size: 20px;
+            }
+    
+            .logo {
+                display: block;
+                margin-left: auto;
+    
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .menu {
+                display: none;
+            }
+        }
+    }
 }

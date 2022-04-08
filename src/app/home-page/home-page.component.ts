@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
     constructor() {}
     ocupations = [
-        'Front End Developer',
+        'FrontEnd Developer',
         'UI/UX Developer',
         'Front End Engineer',
         'UI/UX Programmer',

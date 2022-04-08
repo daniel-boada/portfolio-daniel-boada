@@ -2,11 +2,32 @@
     <h1 class="title">Experience</h1>
     <div class="tiles">
         <div class="tile">
-            <h2>Capgemini</h2>
-            <p>Front End Developer - Capgemini America Inc | 2020 - Present</p>
-
-            <h2>Technical Lead:</h2>
-            <h2>Front end Developer</h2>
+            <img [src]="capgemini" alt="" />
+            <p>Front End Developer - Capgemini America Inc</p>
+            <p>2020 - Present</p>
+            <p>
+                Worked for a Fortune 100 company as a Technical Lead and as an
+                Angular Developer. Gained new contracts for the company,
+                totaling to more than $400,000 in revenue
+            </p>
+            <mat-accordion>
+                <div *ngFor="let skill of skills">
+                    <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>    
+                            <div class="wrap">
+                                <div>{{ skill.title }}</div>
+                                <div>{{ skill.description }}</div>
+                            </div>
+                        </mat-expansion-panel-header>
+                        <ul
+                            class="wrap"
+                            *ngFor="let text of splitText(skill.expandedText)"
+                        >
+                            <li>{{ text }}</li>
+                        </ul>
+                    </mat-expansion-panel>
+                </div>
+            </mat-accordion>
         </div>
     </div>
 </div>

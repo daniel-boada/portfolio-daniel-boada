@@ -1,13 +1,23 @@
 <div class="navbar">
     <div class="buttons">
-        <img [src]='logo' >
-        <button mat-button class="button" (click)="scrollTo('home')">Home</button>
-        <button mat-button class="button" (click)="scrollTo('skills')">Skills</button>
-        <button mat-button class="button" (click)="scrollTo('experience')">Experience</button>
-        <button mat-button class="button" (click)="scrollTo('contact')">Contact</button>
-        <div class='logo'>
-            <img [src]='mailLogo' >
-            <img [src]='LinkedInLogo' >
+        <img [src]="logo" />
+        <button mat-button class="button" (click)="scrollTo('home')">
+            Home
+        </button>
+        <button mat-button class="button" (click)="scrollTo('skills')">
+            Skills
+        </button>
+        <button mat-button class="button" (click)="scrollTo('experience')">
+            Experience
+        </button>
+        <button mat-button class="button" (click)="scrollTo('contact')">
+            Contact
+        </button>
+        <div class="logo">
+            <img [src]="mailLogo" />
+            <img [src]="LinkedInLogo" />
+            <img [src]="github" />
         </div>
+        <div class="menu"><img [src]="menu_navbar_icon" /></div>
     </div>
-</div>  
+</div>

@@ -2,12 +2,11 @@
 
 .body {
     justify-content: center;
-    width: 1000px;
     .title {
         font-weight: 900;
         font-size: 50px;
         margin: 40px;
-        color: $beige;
+        color: $dark-blue;
     }
 
     .icons1 {
@@ -15,8 +14,7 @@
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
-        background-color: $beige;
-        height: 100px;
+        background-color: lightgrey;
         justify-content: center;
         border-radius: 10px;
         display: flex;
@@ -40,8 +38,9 @@
         justify-content: center;
         align-content: center;
         display: flex;
+        flex-wrap: wrap;
+
         margin-top: 20px;
-        background-color: $light-blue;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -49,18 +48,15 @@
 
         .mat-form-field + .mat-form-field {
             margin-left: 8px;
-            background: $beige;
         }
         .accordion {
             margin-top: 2px;
         }
         .color {
             font-size: 20px;
-            background: $beige;
         }
         .panel-title {
             margin-left: 30px;
-            width: 250px;
         }
     }
 }
@@ -78,7 +74,7 @@
     left: 15px;
     transform: translate(-30%, -100%);
     padding: 10px 10px;
-    color: $beige;
+    color: $dark-blue;
     background-color: $light-blue;
     font-weight: normal;
     font-size: 14px;
