@@ -2,7 +2,7 @@
 
 .body {
     justify-content: center;
-
+    width: 1000px;
     .title {
         font-weight: 900;
         font-size: 50px;
@@ -41,7 +41,6 @@
         align-content: center;
         display: flex;
         margin-top: 20px;
-        width: 560px;
         background-color: $light-blue;
         border-radius: 10px;
         margin-left: auto;
@@ -57,7 +56,6 @@
         }
         .color {
             font-size: 20px;
-            width: 560px;
             background: $beige;
         }
         .panel-title {

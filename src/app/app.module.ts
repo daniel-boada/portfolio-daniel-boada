@@ -18,6 +18,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ProjectsComponent } from './projects/projects.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
     declarations: [
@@ -37,6 +38,7 @@ import { ProjectsComponent } from './projects/projects.component';
         MatMenuModule,
         MatButtonModule,
         MatExpansionModule,
+        MatTabsModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

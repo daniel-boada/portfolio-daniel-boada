@@ -2,8 +2,21 @@
     <app-navigation-bar></app-navigation-bar>
     <div class="page">
         <app-home-page class="home" id="home"></app-home-page>
-        <app-skills-page class="tile" id="skills"></app-skills-page>
-        <app-experience-page class="tile" id="experience"></app-experience-page>
-        <app-projects class="tile" id="projects"></app-projects>
+        <mat-tab-group class="tile" mat-align-tabs="center">
+            <mat-tab label="First">
+                <app-skills-page id="skills"></app-skills-page>
+            </mat-tab>
+            <mat-tab label="Second">
+                <app-experience-page id="experience"></app-experience-page>
+            </mat-tab>
+            <mat-tab label="Third">
+                <app-projects class="tile" id="projects"></app-projects>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+    <app-contact-page></app-contact-page>
+    <div class="icons">
+        <img [src]="mailLogo" />
+        <img [src]="LinkedInLogo" />
     </div>
 </div>

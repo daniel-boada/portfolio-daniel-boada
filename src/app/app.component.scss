@@ -4,7 +4,14 @@
     width: 100%;
     text-align: -moz-center;
     text-align: -webkit-center;
-
+    .icons {
+        filter: invert(1);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 20px;   
+        left: 20px;
+    }
     .page {
         margin-top: 80px;
         flex-direction: column;
@@ -12,16 +19,15 @@
         justify-content: center;
         align-items: center;
         color: $light-blue;
-
-        .home {
-            width: 1000px;
-        }
+        width: 100vw;
+        max-width: 1000px;
 
         .tile {
             border-radius: 20px;
-            background-color: $light-blue;
-            width: 1000px;
+            background-image: linear-gradient(to right,$light-blue2, $light-blue, $light-blue2);    
+
+            height: 700px;
             margin-bottom: 40px;
         }
     }
-}
+}   
