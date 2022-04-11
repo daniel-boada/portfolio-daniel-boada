@@ -1,7 +1,8 @@
 @import "src/styles.scss";
 
 .body {
-    justify-content: center;
+    width: 100%;
+
     .title {
         font-weight: 900;
         font-size: 50px;
@@ -24,7 +25,6 @@
             .icon {
                 filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
                 margin: 10px 5px;
-                height: 50px;
                 width: 50px;
             }
             .icon:hover {
@@ -34,12 +34,9 @@
             }
         }
     }
-    .icons2 {
-        justify-content: center;
-        align-content: center;
-        display: flex;
-        flex-wrap: wrap;
 
+    .icons2 {
+        width: 100%;
         margin-top: 20px;
         border-radius: 10px;
         margin-left: auto;
@@ -57,6 +54,31 @@
         }
         .panel-title {
             margin-left: 30px;
+        }
+    }
+
+    mat-expansion-panel {
+        mat-expansion-panel-header {
+            height: 7vh;
+        }
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            font-size: 18px;
+            
+            .description {
+                color: grey
+            }
+        }
+
+        ul {
+            padding-left: 10px;
+        
+            li {
+                text-align: left;
+            }
         }
     }
 }

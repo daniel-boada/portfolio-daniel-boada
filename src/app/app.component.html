@@ -1,17 +1,19 @@
 <div class="root">
     <app-navigation-bar></app-navigation-bar>
 
-    <div class="page">
-        <app-home-page class="home" id="home"></app-home-page>
-        <app-skills-page id="skills"></app-skills-page>
-        <app-experience-page id="experience"></app-experience-page>
-        <app-projects class="tile" id="projects"></app-projects>
+    <div class="pages">
+        <app-home-page class="page" id="home"></app-home-page>
+        <app-skills-page class="page" id="skills"></app-skills-page>
+        <app-experience-page class="page" id="experience"></app-experience-page>
+        <app-projects class="page" id="projects"></app-projects>
     </div>
 
-    <app-contact-page></app-contact-page>
+    <app-contact-page id="contact"></app-contact-page>
     <div class="icons">
-        <img [src]="mailLogo" />
-        <img [src]="LinkedInLogo" />
-        <img [src]="github" />
+        <a [href]="'mailto:danielboada.db@gmail.com'">
+            <img [src]="mailLogo"/>
+        </a>
+        <img [src]="LinkedInLogo" (click)="redirectTo('linkedIn')"/>
+        <img [src]="github" (click)="redirectTo('github')"/>
     </div>
 </div>

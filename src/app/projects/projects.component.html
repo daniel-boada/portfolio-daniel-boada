@@ -2,16 +2,38 @@
     <h1 class="title">Projects</h1>
     <div class="tiles">
         <div class="description">
-            <h2>Group win cleaners</h2>
-            <p>Designed the website to be have a clean modern look</p>
+            <img [src]="groupWinCleanersLogo" alt="" />
+            <h2>UI/UX Designer</h2>
+
+            <p>Group win cleaners | 2021</p>
             <p>
                 using white as the main color and yellow as the accent to
                 display freshness, happiness and positivity
             </p>
         </div>
         <div class="tile">
-            <img class="project" [src]="groupwincleaners" alt="" />
-            <div class="text">Group Win Cleaners</div>
+            <mat-accordion>
+                <div>
+                    <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                            <div class="wrap">
+                                <div>UX Designer</div>
+                                <div class="color">
+                                    clean modern look
+                                </div>
+                            </div>
+                        </mat-expansion-panel-header>
+                        <ul class="projectDescription"> 
+                            <li>
+                                using white as the main color and yellow as the
+                                accent to display freshness, happiness and
+                                positivity
+                            </li>
+                        </ul>    
+                        <img class="project" [src]="groupWinCleaners" alt="" />
+                    </mat-expansion-panel>
+                </div>
+            </mat-accordion>
         </div>
     </div>
 </div>

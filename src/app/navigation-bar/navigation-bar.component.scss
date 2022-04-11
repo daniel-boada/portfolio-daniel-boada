@@ -2,54 +2,75 @@
 
 .navbar {
     position: fixed;
-    top:0;
+    top: 0;
     background-color: white;
     width: 100%;
     z-index: 1;
     box-shadow: 1px 1px 1px $dark-blue;
 
     .buttons {
-        display: flex; 
-        height: 70px;       
-        color: $dark-blue; 
-        padding: 5px;    
-         .button {
-             display: none;
-         }
-         .logo {
-            display: none;
-         }
-         .menu {
-             display: block;
-             margin-left: auto;
-    
-             img {
-                width: 70px;
-                height: 70px;
-            }
-         }
-    }
+        display: flex;
+        height: 50px;
+        color: $dark-blue;
+        padding: 5px;
 
-    
+        .name {
+            margin: auto;
+            font-size: 7vw; 
+            font-weight: 900;
+        }
+
+        .button {
+            display: none;
+        }
+
+        .right-side {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
     .navbar {
         .buttons {
-            display: flex; 
-            height: 70px;       
-            color: $dark-blue; 
-            padding: 5px;
-    
+            display: flex;
+            height: 70px;
+            color: $dark-blue;
+             padding: 5px 20px;
+
+            .name {
+                align-self: center;
+                font-size: 40px;
+                display: block; 
+                margin: 10px;
+            }
+
             .button {
                 display: block;
                 font-size: 20px;
+
+                &:last-child {
+                    border-radius: 30px;
+                    background-color: $dark-blue;   
+                    color: white;
+                    margin: 5px;
+                    padding: 0 25px;
+                }
             }
-    
-            .logo {
+
+            .right-side {
                 display: block;
                 margin-left: auto;
-    
+                display: flex;
                 img {
                     width: 70px;
                     height: 70px;
