@@ -1,6 +1,7 @@
 @import "src/styles.scss";
 
 .body {
+    color: $dark-blue;
 
     .title {
         font-weight: 900;
@@ -11,76 +12,56 @@
     }
     
     .tiles {
+        font-size: 18px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 10px;
+        margin: 10px 0;
         justify-content: center;
         align-items: center;
         .tile {
-            margin: 10px;
+            margin: 10px 0;
             border-radius: 10px;
             color: $dark-blue;
-        }
-    }   
 
-    .experience {
-        justify-content: center;
-        align-content: center;
-        display: flex;
-        flex-wrap: wrap;
-
-        margin-top: 20px;
-        border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 40px;
-
-        .mat-form-field + .mat-form-field {
-            flex-wrap: wrap;
-            margin-left: 8px;
-        }
-        .accordion {
-            flex-wrap: wrap;
-
-            margin-top: 2px;
-        }
-        .color {
-            flex-wrap: wrap;
-            font-size: 20px;
-
-            span {
-                flex-wrap: wrap;
+            img {
+                width: 60vw;
             }
-            .mat-content {
-                flex-wrap: wrap !important;
+            
+            .paragraph {
+                text-align: left;
+                margin: 10px 10px 20px 10px;
             }
         }
-        .panel-title {
-            flex-wrap: wrap;   
-            justify-content: start; 
+    } 
+    
+
+
+    mat-expansion-panel {
+        mat-expansion-panel-header {
+            height: 7vh;
+        }
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            font-size: 18px;
+            
+            .description {
+                color: grey
+            }
         }
 
+        ul {
+            padding-left: 10px;
         
-    }
-
-}
-
-.wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-}
-
-ul {
-    padding-left: 10px;
-
-    li {
-        text-align: left;
+            li {
+                text-align: left;
+            }
+        }
     }
 }
 
-img {
-    width: 60vw;
-}
+
+

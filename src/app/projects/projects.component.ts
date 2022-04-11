@@ -9,7 +9,8 @@ export class ProjectsComponent implements OnInit {
 
   constructor() { }
 
-  groupwincleaners = 'assets/groupwin.JPG'
+  groupWinCleaners = 'assets/groupwin.JPG';
+  groupWinCleanersLogo = 'assets/groupWinCleaners.png';
 
   ngOnInit(): void {
   }

@@ -13,17 +13,20 @@
     </div>
     <div class="icons2">
         <mat-accordion>
-            <div *ngFor="let skill of skills" class="accordion">
-                <mat-expansion-panel class="color" hideToggle>
+            <div *ngFor="let skill of skills">
+                <mat-expansion-panel hideToggle>
                     <mat-expansion-panel-header>
-                        <mat-panel-title class="panel-title">
-                            {{ skill.title }}
-                        </mat-panel-title>
-                        <mat-panel-description>
-                            {{ skill.description }}
-                        </mat-panel-description>
+                        <div class="wrap">
+                            <div>{{ skill.title }}</div>
+                            <div class="description">{{ skill.description }}</div>
+                        </div>
                     </mat-expansion-panel-header>
-                    <p>{{ skill.expandedText }}</p>
+                    <ul
+                        class="wrap"
+                        *ngFor="let text of splitText(skill.expandedText)"
+                    >
+                        <li>{{ text }}</li>
+                    </ul>
                 </mat-expansion-panel>
             </div>
         </mat-accordion>

@@ -88,4 +88,9 @@ export class SkillsPageComponent implements OnInit {
     ];
 
     ngOnInit(): void {}
+
+    splitText(text: string) {
+        const textArray: string[] = text.split('.');
+        return textArray;
+      }
 }

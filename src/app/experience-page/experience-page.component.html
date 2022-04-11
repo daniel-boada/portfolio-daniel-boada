@@ -3,9 +3,9 @@
     <div class="tiles">
         <div class="tile">
             <img [src]="capgemini" alt="" />
-            <p>Front End Developer - Capgemini America Inc</p>
-            <p>2020 - Present</p>
-            <p>
+            <h2>Front End Developer</h2>
+            <p>Capgemini America Inc<br />2020 - Present</p>
+            <p class="paragraph">
                 Worked for a Fortune 100 company as a Technical Lead and as an
                 Angular Developer. Gained new contracts for the company,
                 totaling to more than $400,000 in revenue
@@ -13,10 +13,10 @@
             <mat-accordion>
                 <div *ngFor="let skill of skills">
                     <mat-expansion-panel hideToggle>
-                        <mat-expansion-panel-header>    
+                        <mat-expansion-panel-header>
                             <div class="wrap">
                                 <div>{{ skill.title }}</div>
-                                <div>{{ skill.description }}</div>
+                                <div class="description">{{ skill.description }}</div>
                             </div>
                         </mat-expansion-panel-header>
                         <ul

@@ -23,7 +23,7 @@ export class ExperiencePageComponent implements OnInit {
                 ',
         },
         {
-            title: 'Technical Lead',
+            title: 'Angular Developer',
             description: '2+ years of experience',
             expandedText:
                 'I have 2+ years of angular development expereience in Capgemini',
