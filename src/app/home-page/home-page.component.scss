@@ -3,7 +3,6 @@
 .body {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     .top {
         .img {
@@ -54,8 +53,8 @@
 
 @media screen and (min-width: 1000px) {
     .body {
-        margin: 70px 0 50px 0;
-        max-width: 1000px;
+        display: block;
+        justify-content: unset;
 
         .top {
             display: flex;
@@ -71,7 +70,7 @@
                     flex-wrap: wrap;
                     flex-direction: column;
                     align-items: flex-start;
-                    justify-content: center;
+                    justify-content: end;
 
                     .hello {
                         margin-top: 0;
@@ -79,14 +78,14 @@
 
                     .firstName {
                         color: $dark-blue;
-                        font-size: 140px;
+                        font-size: 160px;
                         line-height: 120px;
                         font-weight: 900;
                         margin-left: -4px;
                     }
                     .lastName {
                         color: $dark-blue;
-                        font-size: 200px;
+                        font-size: 230px;
                         line-height: 150px;
                         font-weight: 900;
                         margin-left: -8px;
@@ -121,8 +120,8 @@
                 margin-top: 20px;
 
                 .ocupation {
-                    line-height: 80px;
-                    font-size: 100px;
+                    line-height: 90px;
+                    font-size: 110px;
                     text-decoration: underline;
                     text-align: left;
                     color: $dark-blue;
