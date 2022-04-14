@@ -51,7 +51,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
     .body {
         display: block;
         justify-content: unset;
@@ -92,9 +92,9 @@
                     }
                 }
                 .image {
-                    margin-left: 40px;
-                    height: 300px;
-                    width: 300px;
+                    margin-left: auto;
+                    height: 280px;
+                    width: 280px;
                     border-radius: 50%;
                     display: inline-block;
 
