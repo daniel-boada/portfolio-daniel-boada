@@ -78,6 +78,7 @@
                     li {
                         font-size: 18px;
                         text-align: left;
+                        margin: 20px 0;
                     }
                 }
             }
@@ -85,21 +86,27 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     .body {
         .tiles {
             .description {
                 img {
                     width: 400px;
                 }
+
+                .projectDescription {
+                    margin: 10px 10px 10px 10px;
+                    text-align: start;
+                }   
             }
 
             .tile {
                 width: 100%;
                 .project {
-                    height: 500px;
+                    height: 400px;
                 }
             }
         }
     }
+
 }

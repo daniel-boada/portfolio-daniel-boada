@@ -12,22 +12,21 @@
         margin-top: 80px;
         flex-direction: column;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         color: $light-blue;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     .root {
         .pages {
-            width: 1000px;
+            width: 800px;
 
             .page {
                 padding-top: 80px;  
                 
                 &:first-child {
-                    padding-top: 60px;
+                    padding-top: 20px;
                 }
             }
         }
