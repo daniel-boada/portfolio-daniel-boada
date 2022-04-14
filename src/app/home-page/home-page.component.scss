@@ -51,7 +51,7 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     .body {
         display: block;
         justify-content: unset;
@@ -78,23 +78,23 @@
 
                     .firstName {
                         color: $dark-blue;
-                        font-size: 160px;
-                        line-height: 120px;
+                        font-size: 120px;
+                        line-height: 100px;
                         font-weight: 900;
-                        margin-left: -4px;
+                        margin-left: -6px;
                     }
                     .lastName {
                         color: $dark-blue;
-                        font-size: 230px;
-                        line-height: 150px;
+                        font-size: 150px;
+                        line-height: 120px; 
                         font-weight: 900;
                         margin-left: -8px;
                     }
                 }
                 .image {
-                    margin-left: auto;
-                    height: 350px;
-                    width: 350px;
+                    margin-left: 40px;
+                    height: 300px;
+                    width: 300px;
                     border-radius: 50%;
                     display: inline-block;
 
@@ -120,11 +120,12 @@
                 margin-top: 20px;
 
                 .ocupation {
-                    line-height: 90px;
-                    font-size: 110px;
+                    line-height: 70px;      
+                    font-size: 80px;
                     text-decoration: underline;
                     text-align: left;
-                    color: $dark-blue;
+                    color: $light-blue;
+                    -webkit-text-stroke: 0.5px $dark-blue;
                 }
             }
         }
