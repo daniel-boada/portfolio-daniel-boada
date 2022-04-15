@@ -1,5 +1,5 @@
 <div class="body">
-    <h1 class="title">Skills</h1>
+    <h1 class="title"> {{ skillsTitle }}</h1>
     <div class="icons1">
         <div class="icons" *ngFor="let icon of icons">
             <div class="tooltip">
@@ -23,9 +23,9 @@
                     </mat-expansion-panel-header>
                     <ul
                         class="wrap"
-                        *ngFor="let text of splitText(skill.expandedText)"
+                        *ngFor="let bulletPoint of skill.expandedText"
                     >
-                        <li>{{ text }}</li>
+                        <li>{{ bulletPoint }}</li>
                     </ul>
                 </mat-expansion-panel>
             </div>

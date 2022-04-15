@@ -1,7 +1,7 @@
-export interface Skill {
+export interface TileInfo {
     title: string;
     description: string;
-    expandedText: string;
+    expandedText: string[];
 }
 
 export interface Logo {

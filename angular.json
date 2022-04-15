@@ -108,9 +108,21 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "portfolio-daniel-boada"
+  "defaultProject": "portfolio-daniel-boada",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

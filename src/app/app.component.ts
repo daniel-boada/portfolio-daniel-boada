@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AppConstants } from './constants/constants';
+import { HelperFunctionsService } from './services/helper-functions.service';
 
 @Component({
     selector: 'app-root',
@@ -6,15 +8,26 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    LinkedInLogo = 'assets/linkedin.svg';
-    mailLogo = 'assets/mail.svg';
-    github = 'assets/github.svg';
+    constructor(
+        private constants: AppConstants,
+        private helperFunctionsService: HelperFunctionsService
+    ) {}
 
-    public redirectTo(website: string) {
-        if (website === 'github') {
-            window.open('https://github.com/daniel-boada/', '_blank');
-        } else if (website === 'linkedIn') {
-            window.open('https://www.linkedin.com/in/danielboada/', '_blank');
-        }
+    linkedInIcon = this.constants.linkedInIcon;
+    mailIcon = this.constants.mailIcon;
+    githubIcon = this.constants.githubIcon;
+    skillsTitle = this.constants.skillsTitle;
+    projectsTitle = this.constants.projectsTitle;
+    experienceTitle = this.constants.experienceTitle;
+    contactTitle = this.constants.contactTitle;
+    homeTitle = this.constants.homeTitle;
+    mailToPersonalEmail = this.constants.mailToPersonalEmail;
+
+    public redirectToGithub() {
+        this.helperFunctionsService.redirectToGithub();
+    }
+
+    public redirectToLinkedIn() {
+        this.helperFunctionsService.redirectToLinkedIn();
     }
 }

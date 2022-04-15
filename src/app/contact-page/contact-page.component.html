@@ -1,10 +1,13 @@
 <div class="body">
-    <h1 class="title">Contact Me</h1>
-    <p>If you wish to contact me please send me an email at:</p>
-    <h1><b>danielboada.db@gmail.com</b></h1>
-    <p>or contact me on:</p>
-    <img [src]="LinkedInLogo" (click)="redirectTo('linkedIn')"/>
-
-    <p style="margin-top: 20px;">You can also check my other projects at:</p>
-    <img style='margin-bottom: 20px;' [src]="github" (click)="redirectTo('github')"/>
+    <div>
+        <h1 class="title">Contact Me</h1>
+        <p>If you wish to contact me please send me an email at:</p>
+        <h1><b>{{ personalEmail }}</b></h1>
+    </div>
+    <div>
+        <p>or contact me on:</p>
+        <img [src]="linkedInLogoWithName" (click)="redirectToLinkedIn()"/>
+        <p>You can also check my other projects at:</p>
+        <img [src]="githubLogoWithName" (click)="redirectToGithub()"/>
+    </div>
 </div>

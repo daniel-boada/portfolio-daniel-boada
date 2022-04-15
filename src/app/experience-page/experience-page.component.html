@@ -1,28 +1,31 @@
 <div class="body">
-    <h1 class="title">Experience</h1>
+    <h1 class="title">{{ experienceTitle }}</h1>
     <div class="tiles">
         <div class="tile">
-            <img [src]="capgemini" alt="" />
+            <img [src]="capgeminiLogoWithName" alt="" />
             <h2>Front End Developer</h2>
             <p>Capgemini America Inc<br />2020 - Present</p>
             <p class="paragraph">
-                Worked for a Fortune 100 company as a consultant. 
-                Grew from a Web Developer role to a Technical Lead role after a year by demonstrating strong technical knowledge and showing results.
+                Worked for a Fortune 100 company as a consultant. Grew from a
+                Web Developer role to a Technical Lead role after a year by
+                demonstrating strong technical knowledge and showing results.
             </p>
             <mat-accordion>
-                <div *ngFor="let skill of skills">
+                <div *ngFor="let experience of experiencesInfo">
                     <mat-expansion-panel hideToggle>
                         <mat-expansion-panel-header>
                             <div class="wrap">
-                                <div>{{ skill.title }}</div>
-                                <div class="description">{{ skill.description }}</div>
+                                <div>{{ experience.title }}</div>
+                                <div class="description">
+                                    {{ experience.description }}
+                                </div>
                             </div>
                         </mat-expansion-panel-header>
                         <ul
                             class="wrap"
-                            *ngFor="let text of splitText(skill.expandedText)"
+                            *ngFor="let bulletPoint of experience.expandedText"
                         >
-                            <li>{{ text }}</li>
+                            <li>{{ bulletPoint }}</li>
                         </ul>
                     </mat-expansion-panel>
                 </div>
