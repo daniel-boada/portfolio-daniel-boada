@@ -1,5 +1,9 @@
 <div class="root">
-    <app-navigation-bar></app-navigation-bar>
+    <div id="header" *ngIf="scrolled == 0">
+        <app-navigation-bar></app-navigation-bar>
+    </div>
+    <div id="header2" *ngIf="scrolled == 1"></div>
+    
 
     <div class="pages">
         <app-home-page class="page" [id]="homeTitle"></app-home-page>

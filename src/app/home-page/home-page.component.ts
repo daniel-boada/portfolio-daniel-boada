@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppConstants } from '../constants/constants';
+import { HelperFunctionsService } from '../services/helper-functions.service';
 
 @Component({
     selector: 'app-home-page',
@@ -7,26 +8,33 @@ import { AppConstants } from '../constants/constants';
     styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
-    constructor(private constants: AppConstants) {}
+    constructor(
+        private constants: AppConstants,
+        private helperFunctionsService: HelperFunctionsService
+    ) {}
 
     profilePicture = this.constants.profilePicture;
     ocupations = this.constants.ocupations;
     firstName = this.constants.firstName;
     lastName = this.constants.lastName;
 
-    ocupationIndex = 0;
-    ocupationChangeTime = 1000;
+    linkedInIcon = this.constants.linkedInIcon;
+    mailIcon = this.constants.mailIcon;
+    githubIcon = this.constants.githubIcon;
+    skillsTitle = this.constants.skillsTitle;
+    projectsTitle = this.constants.projectsTitle;
+    experienceTitle = this.constants.experienceTitle;
+    contactTitle = this.constants.contactTitle;
+    homeTitle = this.constants.homeTitle;
+    mailToPersonalEmail = this.constants.mailToPersonalEmail;
 
-    ngOnInit(): void {
-        this.changeOcupation();
+    ngOnInit(): void {}
+
+    public redirectToGithub() {
+        this.helperFunctionsService.redirectToGithub();
     }
 
-    changeOcupation() {
-        setInterval(() => {
-            if (this.ocupationIndex >= this.ocupations.length - 1) {
-                this.ocupationIndex = -1;
-            }
-            this.ocupationIndex++;
-        }, this.ocupationChangeTime);
+    public redirectToLinkedIn() {
+        this.helperFunctionsService.redirectToLinkedIn();
     }
 }

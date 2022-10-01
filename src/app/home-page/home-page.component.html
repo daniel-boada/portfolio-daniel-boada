@@ -1,14 +1,10 @@
 <div class="body">
-    <div class="top">
-        <div class="img">
-            <div class="introduction">
-                <h1 class="firstName">{{ firstName }}</h1>
-                <h1 class="lastName">{{ lastName }}</h1>
-            </div>
-            <img class="profilePicture" [src]="profilePicture" />
-        </div>
-        <div class="text">
-            <p class="ocupation">{{ ocupations[ocupationIndex] }}</p>
-        </div>
+    <h2 class="ocupation">Front End Developer</h2>
+    <div class="icons">
+        <a [href]="mailToPersonalEmail">
+            <img [src]="mailIcon" />
+        </a>
+        <img [src]="linkedInIcon" (click)="redirectToLinkedIn()" />
+        <img [src]="githubIcon" (click)="redirectToGithub()" />
     </div>
 </div>

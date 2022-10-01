@@ -3,16 +3,15 @@
 .navbar {
     position: fixed;
     top: 0;
-    background-color: white;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
-    box-shadow: 1px 1px 1px $dark-blue;
+    
 
     .buttons {
         display: flex;
         height: 50px;
-        color: $dark-blue;
-        padding: 5px;
+        color: $font-normal;
+        padding: 10px;
 
         .name {
             margin: auto;
@@ -32,6 +31,7 @@
             display: block;
 
             img {
+                filter: invert(1);
                 width: 50px;
                 height: 50px;
             }
@@ -41,17 +41,17 @@
 
 @media screen and (min-width: 720px) {
     .navbar {
+        width: -webkit-fill-available;
+        padding: 20px 50px;
+
         .buttons {
             display: flex;
             height: 70px;
-            color: $dark-blue;
-             padding: 5px 20px;
+            color: $font-normal;
 
             .name {
-                align-self: center;
-                font-size: 40px;
-                display: block; 
-                margin: 10px;
+                font-size: 4vw; 
+                margin-left: 20px;
             }
 
             .button {
@@ -60,15 +60,13 @@
 
                 &:last-child {
                     border-radius: 30px;
-                    background-color: $dark-blue;   
-                    color: white;
+                    color: $font-highlight;
                     margin: 5px;
                     padding: 0 25px;
                 }
             }
 
             .right-side {
-                display: block;
                 margin-left: auto;
                 display: flex;
                 img {

@@ -1,114 +1,70 @@
 @import "src/styles.scss";
 
 .body {
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
 
-    .top {
-        .img {
-            .introduction {
-                .hello {
-                    margin-top: 20px;
-                    font-size: 50px;
-                }
-                .firstName {
-                    color: $dark-blue;
-                    font-size: 25vw;
-                    line-height: 20vw;
-                    font-weight: 900;
-                }
-                .lastName {
-                    color: $dark-blue;
-                    font-size: 25vw;
-                    line-height: 20vw;
-                    font-weight: 900;
-                }
-            }
-            .profilePicture {
-                max-width: 400px;
-                width: 80vw;
-            }
-        }
+    .greetings {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    .name {
+        color: $font-normal;
+    }
 
-        .text {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            font-size: 8vw;
-            line-height: 8vw;
-            margin-top: 20px;
+    .ocupation {
+        margin-bottom: 20px;
+        font-size: 10vw;
+        line-height: 10vw;
+        font-weight: 900;
+        text-align: center;
+    }
 
-            .ocupation {
-                margin-bottom: 20px;
-                font-size: 10vw;
-                line-height: 10vw;
-                font-weight: 900;
-                text-decoration: underline;
-                text-align: center;
-                color: $dark-blue;
-            }
+    .icons {
+        flex-direction: row;
+        cursor: pointer;
+        filter: invert(1);
+
+        img {
+            width: 50px;
         }
     }
 }
 
 @media screen and (min-width: 720px) {
     .body {
-        display: block;
-        justify-content: unset;
-
+        // margin-top: 30vh;
         .top {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
 
-            .img {
+            .introduction {
                 display: flex;
                 flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: end;
 
-                .introduction {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: end;
-
-                    .hello {
-                        margin-top: 0;
-                    }
-
-                    .firstName {
-                        color: $dark-blue;
-                        font-size: 120px;
-                        line-height: 100px;
-                        font-weight: 900;
-                        margin-left: -6px;
-                    }
-                    .lastName {
-                        color: $dark-blue;
-                        font-size: 150px;
-                        line-height: 120px; 
-                        font-weight: 900;
-                        margin-left: -8px;
-                    }
+                .greetings {
+                    margin-top: 0;
+                    margin-bottom: 30px;
                 }
-                .profilePicture {
-                    margin-left: auto;
-                    height: 280px;
-                    width: 280px;
-                    border-radius: 50%;
-                    display: inline-block;
 
-                    &:hover {
-                        -webkit-transform: scaleX(-1);
-                        transform: rotateY(180deg);
-                        transition: transform 0.8s;
-                    }
-
-                    &:not(:hover) {
-                        -webkit-transform: scaleX(1);
-                        transform: rotateY(360deg);
-                        transition: transform 0.8s;
-                    }
+                .firstName {
+                    color: $font-normal;
+                    font-size: 120px;
+                    line-height: 100px;
+                    margin-left: -6px;
+                }
+                .lastName {
+                    color: $font-normal;
+                    font-size: 150px;
+                    line-height: 120px;
+                    margin-left: -8px;
                 }
             }
 
@@ -120,12 +76,10 @@
                 margin-top: 20px;
 
                 .ocupation {
-                    line-height: 70px;      
-                    font-size: 80px;
-                    text-decoration: underline;
+                    line-height: 70px;
+                    font-size: 84px;
                     text-align: left;
-                    color: $light-blue;
-                    -webkit-text-stroke: 0.5px $dark-blue;
+                    color: $font-highlight;
                 }
             }
         }

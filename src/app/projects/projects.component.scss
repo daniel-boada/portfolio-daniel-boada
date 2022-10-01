@@ -1,7 +1,7 @@
 @import "src/styles.scss";
 
 .body {
-    color: $dark-blue;
+    color: $font-normal;
     font-size: 18px;
 
     .title {
@@ -20,7 +20,7 @@
         align-items: center;
 
         .description {
-            color: $dark-blue;
+            color: $font-normal;
 
             img {
                 width: 60vw;
@@ -30,7 +30,7 @@
         .tile {
             margin: 10px 0;
             border-radius: 10px;
-            color: $dark-blue;
+            color: $font-normal;
             position: relative;
             text-align: center;
             cursor: pointer;
