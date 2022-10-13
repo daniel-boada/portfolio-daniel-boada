@@ -2,13 +2,14 @@
     <app-navigation-bar></app-navigation-bar>
 
     <div class="pages">
-        <app-home-page class="page" [id]="homeTitle"></app-home-page>
+        <app-home-page [id]="homeTitle"></app-home-page>
         <app-skills-page class="page" [id]="skillsTitle"></app-skills-page>
         <app-experience-page class="page" [id]="experienceTitle"></app-experience-page>
-        <app-projects class="page" [id]="projectsTitle"></app-projects>
+        <!-- <app-projects class="page" [id]="projectsTitle"></app-projects> -->
+        <!-- <app-contact-page [id]="contactTitle"></app-contact-page> -->
     </div>
 
-    <app-contact-page [id]="contactTitle"></app-contact-page>
+    
     <div class="icons">
         <a [href]="mailToPersonalEmail">
             <img [src]="mailIcon"/>

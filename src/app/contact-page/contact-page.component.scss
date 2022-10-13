@@ -1,6 +1,7 @@
 @import "src/styles.scss";
 
 .body {
+    height: 80vh;
     color: $dark-blue;
     font-size: 18px;
     display: flex;
@@ -17,5 +18,12 @@
         cursor: pointer;
         height: 70px;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .body {
+        width: 40vw;
+        // margin-left: 30vw;
     }
 }

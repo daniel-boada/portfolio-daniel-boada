@@ -1,34 +1,38 @@
 <div class="body">
-    <h1 class="title"> {{ skillsTitle }}</h1>
-    <div class="icons1">
-        <div class="icons" *ngFor="let icon of icons">
-            <div class="tooltip">
-                <img class="icon" [src]="icon.url" />
-                <div class="top">
-                    <p class="tool"> {{ icon.description }} </p>
-                    <i></i>
+    <div class="padding">
+        <h1 class="title">{{ skillsTitle }}</h1>
+        <div class="icons1">
+            <div class="icons" *ngFor="let icon of icons">
+                <div class="tooltip">
+                    <img class="icon" [src]="icon.url" />
+                    <div class="top">
+                        <p class="tool">{{ icon.description }}</p>
+                        <i></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="icons2">
-        <mat-accordion>
-            <div *ngFor="let skill of skills">
-                <mat-expansion-panel hideToggle>
-                    <mat-expansion-panel-header>
-                        <div class="wrap">
-                            <div>{{ skill.title }}</div>
-                            <div class="description">{{ skill.description }}</div>
-                        </div>
-                    </mat-expansion-panel-header>
-                    <ul
-                        class="wrap"
-                        *ngFor="let bulletPoint of skill.expandedText"
-                    >
-                        <li>{{ bulletPoint }}</li>
-                    </ul>
-                </mat-expansion-panel>
-            </div>
-        </mat-accordion>
+        <div class="icons2">
+            <mat-accordion>
+                <div *ngFor="let skill of skills">
+                    <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                            <div class="wrap">
+                                <div>{{ skill.title }}</div>
+                                <div class="description">
+                                    {{ skill.description }}
+                                </div>
+                            </div>
+                        </mat-expansion-panel-header>
+                        <ul
+                            class="wrap"
+                            *ngFor="let bulletPoint of skill.expandedText"
+                        >
+                            <li>{{ bulletPoint }}</li>
+                        </ul>
+                    </mat-expansion-panel>
+                </div>
+            </mat-accordion>
+        </div>
     </div>
 </div>

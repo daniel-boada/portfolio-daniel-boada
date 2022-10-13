@@ -1,14 +1,28 @@
 <div class="body">
-    <div class="top">
-        <div class="img">
-            <div class="introduction">
-                <h1 class="firstName">{{ firstName }}</h1>
-                <h1 class="lastName">{{ lastName }}</h1>
+    <div class="home">
+        <div class="left">
+            <div class="top">
+                <img class="profilePicture" [src]="profilePicture" />
+                <div class="img">
+                    <div class="introduction">
+                        <div class="name">About Me</div>
+                        <h1 class="about-me">
+                            My name is
+                            <span class="color-chage">Daniel Boada</span>, I am
+                            a Front End Developer with a passion for UI/UX
+                            Design with 2+ years of expereince creating websites
+                            using <span class="color-change">Angular 2+</span>.
+                            I spend my weekends playing board games with my
+                            friends, my dog's name is Copito, graduated with a
+                            degree in Computer Engineering from Florida Poly.
+                        </h1>
+                    </div>
+                </div>
+                <div class="text"></div>
             </div>
-            <img class="profilePicture" [src]="profilePicture" />
-        </div>
-        <div class="text">
-            <p class="ocupation">{{ ocupations[ocupationIndex] }}</p>
+            <div class="learn-more">
+                <a href="default.asp" target="_blank">Learn More About Me</a>
+            </div>
         </div>
     </div>
 </div>

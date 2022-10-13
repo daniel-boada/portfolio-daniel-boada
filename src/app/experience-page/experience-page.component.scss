@@ -3,6 +3,12 @@
 .body {
     color: $dark-blue;
 
+    .padding {
+        padding: 30px;
+        border-radius: 10px;
+        background-color: rgba(249, 250, 251, 1);
+        box-shadow: 0 1px 8px rgba(167, 167, 167, 0.5);     
+    }
     .title {
         font-weight: 900;
         font-size: 50px;
@@ -13,18 +19,25 @@
     .tiles {
         font-size: 18px;
         display: flex;
+        align-items: flex-start;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         margin: 10px 0;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
         .tile {
-            margin: 10px 0;
+            // align-items: flex-start;
+
+            width: 80%;
+            min-height: 400px;
+            box-shadow: 0 1px 8px rgba(167, 167, 167, 0.5);     
+            padding: 20px;
+            margin: 10px;
             border-radius: 10px;
             color: $dark-blue;
 
             img {
-                width: 60vw;
+                width: 20vw;
             }
 
             .paragraph {
@@ -65,7 +78,8 @@
         .tiles {
             .tile {
                 img {
-                    width: 400px;
+                    width: 80%;
+                    max-width: 400px;
                 }
             }
         }

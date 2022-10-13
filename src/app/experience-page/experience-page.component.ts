@@ -12,4 +12,6 @@ export class ExperiencePageComponent {
     experiencesInfo = this.constants.experiencesInfo;
     capgeminiLogoWithName = this.constants.capgeminiLogoWithName;
     experienceTitle = this.constants.experienceTitle;
+    groupWinCleaners = 'assets/groupwin.JPG';
+    groupWinCleanersLogo = 'assets/groupWinCleaners.png';
 }

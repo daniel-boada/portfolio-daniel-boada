@@ -23,7 +23,7 @@
             color: $dark-blue;
 
             img {
-                width: 60vw;
+                width: 40vw;
             }
         }
 
@@ -88,6 +88,8 @@
 
 @media screen and (min-width: 720px) {
     .body {
+        width: 40vw;
+        margin-left: 30vw;
         .tiles {
             .description {
                 img {

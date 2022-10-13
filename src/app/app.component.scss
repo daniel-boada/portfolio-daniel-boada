@@ -4,26 +4,45 @@
     width: 100%;
     text-align: -moz-center;
     text-align: -webkit-center;
+
     .icons {
         display: none;
     }
     .pages {
-        padding: 20px;
-        margin-top: 80px;
         flex-direction: column;
         display: flex;
         justify-content: center;
-        color: $light-blue;
+        // color: ;
+
+        .page {
+            vertical-align: middle;
+        }
     }
 }
 
 @media screen and (min-width: 720px) {
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #97DFFC;
+    }
+
     .root {
+
         .pages {
-            width: 720px;
+            width: 60vw;
 
             .page {
-                padding-top: 80px;  
+                
+                padding-top: 40px;  
                 
                 &:first-child {
                     padding-top: 20px;
@@ -37,9 +56,10 @@
             flex-direction: column;
             position: fixed;
             bottom: 20px;
-            left: 20px;
+            left: 50px;
             cursor: pointer;
             padding-bottom: 0;
+            // filter: invert(1);
 
             img {
                 width: 70px;

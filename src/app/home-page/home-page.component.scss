@@ -3,100 +3,92 @@
 .body {
     display: flex;
     justify-content: center;
-
-    .top {
-        .img {
-            .introduction {
-                .hello {
-                    margin-top: 20px;
-                    font-size: 50px;
+    .home {
+        .left {
+            .top {
+                .profilePicture {
+                    width: 80vw;
+                    max-width: 400px;
                 }
-                .firstName {
-                    color: $dark-blue;
-                    font-size: 25vw;
-                    line-height: 20vw;
-                    font-weight: 900;
+                .img {
+                    .introduction {
+                        .hello {
+                            margin-top: 20px;
+                            font-size: 50px;
+                        }
+                        .firstName {
+                            color: $dark-blue;
+                            font-size: 25vw;
+                            line-height: 20vw;
+                            // font-weight: 900;
+                        }
+                        .lastName {
+                            color: $dark-blue;
+                            font-size: 25vw;
+                            line-height: 20vw;
+                            // font-weight: 900;
+                        }
+                    }
+        
                 }
-                .lastName {
-                    color: $dark-blue;
-                    font-size: 25vw;
-                    line-height: 20vw;
-                    font-weight: 900;
+        
+                .text {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    // font-size: 8vw;
+                    // line-height: 8vw;
+                    // margin-top: 20px;
+        
+                    .ocupation {
+                        // margin-bottom: 20px;
+                        // font-size: 10vw;
+                        // line-height: 10vw;
+                        // font-weight: 900;
+                        // text-decoration: underline;
+                        text-align: center;
+                        color: $dark-blue;
+                    }
                 }
-            }
-            .profilePicture {
-                max-width: 400px;
-                width: 80vw;
-            }
-        }
-
-        .text {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            font-size: 8vw;
-            line-height: 8vw;
-            margin-top: 20px;
-
-            .ocupation {
-                margin-bottom: 20px;
-                font-size: 10vw;
-                line-height: 10vw;
-                font-weight: 900;
-                text-decoration: underline;
-                text-align: center;
-                color: $dark-blue;
             }
         }
     }
+    
 }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
 @media screen and (min-width: 720px) {
     .body {
-        display: block;
-        justify-content: unset;
+        // background-color: aliceblue;
+        // height: calc(100vh - 100px);
 
-        .top {
+        .home {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
+            text-align: center;
+            justify-content: center;
 
-            .img {
+            width: 100%;
+            padding-top: 120px;
+
+            .left {
+                padding: 30px;
+                border-radius: 10px;
+                background-color: rgba(249, 250, 251, 1);
+                box-shadow: 0 1px 8px rgba(167, 167, 167, 0.5);
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
 
-                .introduction {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: end;
-
-                    .hello {
-                        margin-top: 0;
-                    }
-
-                    .firstName {
-                        color: $dark-blue;
-                        font-size: 120px;
-                        line-height: 100px;
-                        font-weight: 900;
-                        margin-left: -6px;
-                    }
-                    .lastName {
-                        color: $dark-blue;
-                        font-size: 150px;
-                        line-height: 120px; 
-                        font-weight: 900;
-                        margin-left: -8px;
-                    }
+                .name {
+                    font-size: 50px;
+                    font-weight: 900;
+                    margin: 40px;
                 }
                 .profilePicture {
-                    margin-left: auto;
-                    height: 280px;
-                    width: 280px;
-                    border-radius: 50%;
-                    display: inline-block;
+                    // margin-right: 100px;
+                    padding: 0px 50px 0 50px;
+                    height: 350px;
+                    width: 350px;
 
                     &:hover {
                         -webkit-transform: scaleX(-1);
@@ -110,22 +102,97 @@
                         transition: transform 0.8s;
                     }
                 }
+                .skills-icons {
+                    margin: 0 100px;
+                    width: fit-content;
+
+                    background-color: rgba(249, 250, 251, 0.5);
+                    box-shadow: 1px 1px 1px rgba(229, 231, 235, 1);
+                    justify-content: center;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    .icons {
+                        .icon {
+                            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+                            margin: 10px 5px;
+                            width: 50px;
+                        }
+                        .icon:hover {
+                            margin: 7px 2px;
+                            height: 56px;
+                            width: 56px;
+                        }
+                    }
+                }
+                .contact-icons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    margin-top: 20px;
+                    // position: fixed;
+                    // bottom: 20px;
+                    // left: 50px;
+                    cursor: pointer;
+                    // padding-bottom: 0;
+                    // filter: invert(1);
+
+                    img {
+                        width: 70px;
+                    }
+                }
             }
 
-            .text {
+            .top {
                 display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                font-size: 28px;
-                margin-top: 20px;
+                // flex-wrap: wrap;
+                flex-direction: row;
 
-                .ocupation {
-                    line-height: 70px;      
-                    font-size: 80px;
-                    text-decoration: underline;
-                    text-align: left;
-                    color: $light-blue;
-                    -webkit-text-stroke: 0.5px $dark-blue;
+                .img {
+                    display: flex;
+                    // flex-wrap: wrap;
+
+                    .introduction {
+                        display: flex;
+                        // flex-wrap: wrap;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: end;
+                        text-align: left;
+
+                        .hello {
+                            margin-top: 0;
+                        }
+
+                        .about-me {
+                            color: $dark-blue;
+                            font-size: 30px;
+                            line-height: normal;
+                            // font-weight: 900;
+                        }
+
+                        .color-chage {
+                            color: $light-blue;
+                        }
+                    }
+                }
+
+                .text {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    // font-size: 28px;
+                    // margin-top: 20px;
+
+                    .ocupation {
+                        // line-height: 70px;
+                        font-size: 100px;
+                        // text-decoration: underline;
+                        text-align: left;
+                        color: $dark-blue;
+                        // -webkit-text-stroke: 0.5px $dark-blue;
+                    }
                 }
             }
         }
