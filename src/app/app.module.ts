@@ -20,6 +20,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +31,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
         SkillsPageComponent,
         ExperiencePageComponent,
         ProjectsComponent,
+        AboutMeComponent,
     ],
     imports: [
         BrowserModule,
