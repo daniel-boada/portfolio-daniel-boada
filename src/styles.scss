@@ -1,10 +1,10 @@
-$beige: #F7E2E2;
-$light-blue: #61A4BC;
+$beige: #f7e2e2;
+$light-blue: #61a4bc;
 $light-blue2: #97e4f1;
-$normal-blue: #5B7DB1;
-$dark-blue: #1A132F;
+$normal-blue: #5b7db1;
+$dark-blue: #1a132f;
 $dark-blue2: #30264e;
-    
+
 html {
     height: 100%;
     margin: 0;
@@ -15,11 +15,23 @@ body {
     background-color: white;
     height: 100%;
     margin: 0;
-    padding: 0; 
-    font-family: Consolas, monaco, monospace
+    padding: 0;
+    font-family: Consolas, monaco, monospace;
 }
 
-@import '~@angular/material/theming';
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+@import "~@angular/material/theming";
 @include mat-core();
 
 $my-app-primary: mat-palette($mat-indigo);
