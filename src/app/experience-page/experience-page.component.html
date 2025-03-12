@@ -1,35 +1,20 @@
-<div class="body">
-    <h1 class="title">{{ experienceTitle }}</h1>
-    <div class="tiles">
-        <div class="tile">
-            <img [src]="capgeminiLogoWithName" alt="" />
-            <h2>Front End Developer</h2>
-            <p>Capgemini America Inc<br />2020 - Present</p>
-            <p class="paragraph">
-                Worked for a Fortune 100 company as a consultant. Grew from a
-                Web Developer role to a Technical Lead role after a year by
-                demonstrating strong technical knowledge and showing results.
-            </p>
-            <mat-accordion>
-                <div *ngFor="let experience of experiencesInfo">
-                    <mat-expansion-panel hideToggle>
-                        <mat-expansion-panel-header>
-                            <div class="wrap">
-                                <div>{{ experience.title }}</div>
-                                <div class="description">
-                                    {{ experience.description }}
-                                </div>
-                            </div>
-                        </mat-expansion-panel-header>
-                        <ul
-                            class="wrap"
-                            *ngFor="let bulletPoint of experience.expandedText"
-                        >
-                            <li>{{ bulletPoint }}</li>
-                        </ul>
-                    </mat-expansion-panel>
+<h2>{{id}}</h2>
+<mat-accordion>
+    <div *ngFor="let experience of data">
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <div class="panel">
+                    <img class="logo" width="150" height="50" [src]="experience.logo" alt="Westgate Logo"/>
+                    <p>{{ experience.dates }}</p>
                 </div>
-            </mat-accordion>
-        </div>
+            </mat-expansion-panel-header>
+            <div>{{ experience.title }}</div>
+            <div class="description">
+                {{ experience.description }}
+            </div>
+            <ul class="wrap" *ngFor="let bulletPoint of experience.expandedText">
+                <li>{{ bulletPoint }}</li>
+            </ul>
+        </mat-expansion-panel>
     </div>
-</div>
+</mat-accordion>

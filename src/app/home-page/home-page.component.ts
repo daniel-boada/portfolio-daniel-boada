@@ -6,27 +6,13 @@ import { AppConstants } from '../constants/constants';
     templateUrl: './home-page.component.html',
     styleUrls: ['./home-page.component.scss'],
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
     constructor(private constants: AppConstants) {}
 
     profilePicture = this.constants.profilePicture;
-    ocupations = this.constants.ocupations;
-    firstName = this.constants.firstName;
-    lastName = this.constants.lastName;
 
-    ocupationIndex = 0;
-    ocupationChangeTime = 1000;
-
-    ngOnInit(): void {
-        this.changeOcupation();
-    }
-
-    changeOcupation() {
-        setInterval(() => {
-            if (this.ocupationIndex >= this.ocupations.length - 1) {
-                this.ocupationIndex = -1;
-            }
-            this.ocupationIndex++;
-        }, this.ocupationChangeTime);
+    openPdfInNewTab() {
+        const pdfUrl = 'assets/Daniel Boada Resume 2025.pdf';
+        window.open(pdfUrl, '_blank');
     }
 }
