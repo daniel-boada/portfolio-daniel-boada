@@ -1,24 +1,23 @@
 <div class="navbar">
     <div class="buttons">
-        <img [src]="profileLogo" />
         <div class="name">{{ firstName }} {{ lastName }}</div>
-        <div class="right-side">
-            <button mat-button class="button" (click)="scrollTo(homeTitle)">
+        <div class="right-side desktop-only">
+            <!-- <button mat-button (click)="scrollTo(homeTitle)">
                 {{ homeTitle }}
             </button>
-            <button mat-button class="button" (click)="scrollTo(skillsTitle)">
+            <button mat-button (click)="scrollTo(skillsTitle)">
                 {{ skillsTitle }}
             </button>
-            <button mat-button class="button" (click)="scrollTo(experienceTitle)">
+            <button mat-button (click)="scrollTo(experienceTitle)">
                 {{ experienceTitle }}
             </button>
-            <button mat-button class="button" (click)="scrollTo(projectsTitle)">
+            <button mat-button (click)="scrollTo(projectsTitle)">
                 {{ projectsTitle }}
-            </button>
-            <button mat-button class="button" (click)="scrollTo(contactTitle)">
-                {{ contactTitle }}
-            </button>
+            </button> -->
         </div>
-        <div class="menu"><img [src]="menuNavBarIcon" /></div>
+        <button mat-button class="contact" (click)="scrollTo(contactTitle)">
+            {{ contactTitle }}
+        </button>
+        <button class="mobile-only"><img src="assets/menu_navbar.svg" /></button>
     </div>
 </div>

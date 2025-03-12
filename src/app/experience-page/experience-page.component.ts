@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AppConstants } from '../constants/constants';
+import { TileInfo } from '../interfaces/interfaces';
 
 @Component({
     selector: 'app-experience-page',
@@ -7,9 +8,9 @@ import { AppConstants } from '../constants/constants';
     styleUrls: ['./experience-page.component.scss'],
 })
 export class ExperiencePageComponent {
-    constructor(private constants: AppConstants) {}
 
-    experiencesInfo = this.constants.experiencesInfo;
-    capgeminiLogoWithName = this.constants.capgeminiLogoWithName;
-    experienceTitle = this.constants.experienceTitle;
+    @Input() data?: TileInfo[];
+    @Input() id?: string;
+
+    constructor() {}
 }
