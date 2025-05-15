@@ -1,0 +1,20 @@
+<div class="navbar">
+    <div class="buttons">
+        <div class="name">{{ firstName }} {{ lastName }}</div>
+        <div class="right-side desktop-only">
+            <button class="button-as-link" (click)="scrollTo(homeTitle)">
+                {{ homeTitle }}
+            </button>
+            <button class="button-as-link" (click)="scrollTo(experienceTitle)">
+                {{ experienceTitle }}
+            </button>
+            <button class="button-as-link" (click)="scrollTo(projectsTitle)">
+                {{ projectsTitle }}
+            </button>
+        </div>
+        <button class="contact" (click)="scrollTo(contactTitle)">
+            {{ contactTitle }}
+        </button>
+        <button class="mobile-only"><img src="assets/menu_navbar.svg" /></button>
+    </div>
+</div>

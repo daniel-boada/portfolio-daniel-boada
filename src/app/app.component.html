@@ -2,17 +2,10 @@
     <app-navigation-bar></app-navigation-bar>
 
     <div class="pages">
-        <app-home-page class="page" [id]="homeTitle"></app-home-page>
-        <app-skills-page class="page" [id]="skillsTitle"></app-skills-page>
+        <app-home-page></app-home-page>
+        <app-skills-page></app-skills-page>
         <app-experience-page class="page" [id]="experienceTitle" [data]="experiences"></app-experience-page>
-        <app-experience-page class="page" [id]="projectsTitle" [data]="projects"></app-experience-page>
+        <app-projects class="page" [id]="projectsTitle" [data]="projects"></app-projects>
         <app-about-me class="page"></app-about-me>
-    </div>
-
-    <app-contact-page [id]="contactTitle"></app-contact-page>
-    <div class="icons">
-        <a href="mailto:danielboada.dev@gmail.com"><img src="assets/mail.svg"/></a>
-        <a href="https://www.linkedin.com/in/danielboada/" target="_blank"><img src="assets/linkedin.svg" /></a>
-        <a href="https://github.com/daniel-boada/" target="_blank"><img src="assets/github.svg" /></a>
     </div>
 </div>

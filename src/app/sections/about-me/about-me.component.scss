@@ -1,0 +1,10 @@
+.about-me {
+    background-color: aliceblue;
+    padding: 200px 0;
+    min-height: 400px;
+
+    &__inner {
+        width: 100%;
+        max-width: 1000px;
+    }
+}

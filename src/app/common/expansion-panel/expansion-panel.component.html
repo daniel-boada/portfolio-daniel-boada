@@ -1,0 +1,15 @@
+<mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+        <div class="panel">
+            <img class="logo" width="150" height="50" [src]="data?.logo" alt="Westgate Logo"/>
+            <p>{{ data?.dates }}</p>
+        </div>
+    </mat-expansion-panel-header>
+    <div>{{ data?.title }}</div>
+    <div class="description">
+        {{ data?.description }}
+    </div>
+    <ul class="wrap" *ngFor="let bulletPoint of data?.expandedText">
+        <li>{{ bulletPoint }}</li>
+    </ul>
+</mat-expansion-panel>

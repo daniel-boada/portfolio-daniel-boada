@@ -10,17 +10,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
-import { HomePageComponent } from './home-page/home-page.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
-import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-import { SkillsPageComponent } from './skills-page/skills-page.component';
-import { ExperiencePageComponent } from './experience-page/experience-page.component';
+import { HomePageComponent } from './sections/home-page/home-page.component';
+import { ContactPageComponent } from './sections/contact-page/contact-page.component';
+import { NavigationBarComponent } from './common/navigation-bar/navigation-bar.component';
+import { SkillsPageComponent } from './sections/skills-page/skills-page.component';
+import { ExperiencePageComponent } from './sections/experience-page/experience-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsComponent } from './sections/projects/projects.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutMeComponent } from './sections/about-me/about-me.component';
+import { CardComponent } from './common/card/card.component';
+import { ExpansionPanelComponent } from './common/expansion-panel/expansion-panel.component';
 
 @NgModule({
     declarations: [
@@ -32,6 +34,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
         ExperiencePageComponent,
         ProjectsComponent,
         AboutMeComponent,
+        CardComponent,
+        ExpansionPanelComponent,
     ],
     imports: [
         BrowserModule,

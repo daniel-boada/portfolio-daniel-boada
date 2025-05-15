@@ -1,0 +1,56 @@
+.panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+}
+
+img {
+    width: 150px;
+    object-fit: contain;
+}
+
+mat-expansion-panel {
+    background-color: white;
+    color: #1a132f;
+    margin-bottom: 4px;
+
+    mat-expansion-panel-header {
+        height: 7vh;
+    }
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        font-size: 18px;
+
+        .description {
+            color: grey;
+        }
+    }
+
+    ul {
+        padding-left: 10px;
+
+        li {
+            text-align: left;
+        }
+    }
+}
+
+
+@media screen and (min-width: 720px) {
+    .body {
+        .tiles {
+            .tile {
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }   
+}

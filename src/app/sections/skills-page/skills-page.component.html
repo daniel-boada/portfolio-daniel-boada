@@ -1,0 +1,21 @@
+<div class="icons-container">
+    <div class="years-of-experience" >
+        <div class="years">
+            5+
+        </div> 
+        <div class="years-of-experience-text">
+            Years of<br>
+            Experience
+        </div>
+    </div>
+
+    <div class="icons" *ngFor="let icon of icons">
+        <div class="tooltip">
+            <img class="icon" [src]="icon.url" />
+            <div class="top">
+                <p class="tool">{{ icon.description }}</p>
+                <i></i>
+            </div>
+        </div>
+    </div>
+</div>

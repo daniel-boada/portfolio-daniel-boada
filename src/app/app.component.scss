@@ -8,24 +8,24 @@
         display: none;
     }
     .pages {
-        padding: 20px;
-        margin-top: 80px;
+        margin-top: 60px;
         flex-direction: column;
         display: flex;
         justify-content: center;
-        color: $light-blue;
+        color: $light-color;
     }
 }
 
 @media screen and (min-width: 720px) {
     .root {
-        .pages {
-            width: 720px;
+        // .pages {
+        //     width: 100%;
+        //     max-width: 1300px;
 
-            .page {
-                padding-top: 20px;
-            }
-        }
+        //     .page {
+        //         padding-top: 20px;
+        //     }
+        // }
 
         .icons {
             display: flex;
