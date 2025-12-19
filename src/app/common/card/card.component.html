@@ -1,5 +1,13 @@
 <div class="card">
-    <img class="card__image" [src]="data?.image" [alt]="data?.title">
-    <h3 class="card__title">{{ data?.title }}</h3>
-    <p class="card__description">{{ data?.description }}</p>
+    <div class="card__info">
+        <img class="card__image" [src]="data?.logo" [alt]="data?.title">
+        <h3 class="card__title">{{ data?.title }}</h3>
+        <p class="card__dates">{{ data?.dates }}</p>
+        <h4 class="card__subtitle">{{ data?.subtitle }}</h4>
+        <p class="card__description">{{ data?.description }}</p>
+        <a [href]="'https://' + data?.website" target="_blank">{{ data?.website }}</a>
+    </div>
+    <div class="card__chip-group" *ngIf="data?.technologies">
+        <div class="card__chip" *ngFor="let technology of data?.technologies">{{ technology }}</div>
+    </div>
 </div>

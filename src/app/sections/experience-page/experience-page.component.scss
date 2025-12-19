@@ -1,24 +1,33 @@
 @import "src/styles.scss";
 
 .experience-page {
-    background-color: $dark-color;
-    padding: 200px 0;
+    background: $background-color;
     min-height: 400px;
 
     &__inner {
         width: 100%;
         max-width: 1000px;
     }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 20px;
+    }
 }
 
 @media screen and (min-width: 720px) {
-    .body {
-        .tiles {
-            .tile {
-                img {
-                    width: 400px;
-                }
-            }
+    .experience-page {
+        padding: 100px 0 200px;
+
+        h2 {
+            padding-bottom: 100px;
         }
-    }   
+
+        &__cards {
+            flex-direction: row;
+        }
+    }
 }

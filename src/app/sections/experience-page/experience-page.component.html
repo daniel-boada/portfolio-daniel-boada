@@ -1,8 +1,8 @@
-<div class="experience-page">
+<section class="experience-page">
     <div class="experience-page__inner">
         <h2>Expecience</h2>
-        <mat-accordion>
-            <app-expansion-panel *ngFor="let experience of data" [data]="experience"></app-expansion-panel>
-        </mat-accordion>
+        <div class='experience-page__cards'>
+            <app-card *ngFor="let experience of data" [data]="experience"></app-card>
+        </div>
     </div>
-</div>
+</section>
